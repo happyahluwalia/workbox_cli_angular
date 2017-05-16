@@ -1,0 +1,1 @@
+{"globDirectory":"dist\\","staticFileGlobs":["**/*.{ico,html,js,css}"],"swDest":"dist\\sw.js","globIgnores":["sw.js"]}

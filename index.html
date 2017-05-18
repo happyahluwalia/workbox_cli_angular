@@ -5,42 +5,44 @@
   <meta charset="utf-8">
   <title>AngularShell</title>
   <base href="https://happyahluwalia.github.io/workbox_cli_angular/">
-
+  <meta name="theme-color">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 <link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
 
 <body>
   <ha-root>Loading...</ha-root>
 
   <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-     ga('create', 'UA-99191087-2', 'auto');
-     ga('send', 'pageview');
-
+    ga('create', 'UA-99191087-2', 'auto');
+    ga('send', 'pageview');
   </script>
   <script>
-     (function() {
-        'use strict';
-          if (!('serviceWorker' in navigator)) {
-              console.log('Service worker not supported');
-              return;
-            }
-            navigator.serviceWorker.register('./sw.js')
-              .then(function (registration) {
-                console.log('registerd at scope ', registration.scope);
-              })
-              .catch(function (error) {
-                console.log('Service worker registration failed  ',error);
-              });
-          })();
-		  </script>
-	
-<script type="text/javascript" src="inline.57d2da1b2c25fa8b4b09.bundle.js"></script><script type="text/javascript" src="polyfills.60187f338ba5b0a175a8.bundle.js"></script><script type="text/javascript" src="vendor.020ca57fbacab669a996.bundle.js"></script><script type="text/javascript" src="main.0fe8bbd848053a361a01.bundle.js"></script></body>
+     (function () {
+       'use strict';
+       if (!('serviceWorker' in navigator)) {
+         console.log('Service worker not supported');
+         return;
+       }
+       navigator.serviceWorker.register('./sw.js')
+         .then(function (registration) {
+           console.log('registerd at scope ', registration.scope);
+         })
+         .catch(function (error) {
+           console.log('Service worker registration failed  ', error);
+         });
+     })();
+  </script>
+
+<script type="text/javascript" src="inline.37d3f4116b0d3cae9f3d.bundle.js"></script><script type="text/javascript" src="polyfills.3c94411d2589f8c44aa8.bundle.js"></script><script type="text/javascript" src="vendor.70a47a9ba431200a2f3c.bundle.js"></script><script type="text/javascript" src="main.fa2ae27687859d285d0c.bundle.js"></script></body>
 
 </html>

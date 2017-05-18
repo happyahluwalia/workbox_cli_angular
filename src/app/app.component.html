@@ -1,3 +1,6 @@
+<div class="container">
+<div>
+
 <header class="mdc-toolbar mdc-toolbar--fixed">
   <div class="mdc-toolbar__row">
     <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
@@ -5,9 +8,9 @@
       <span class="mdc-toolbar__title">Angular Shell</span>
     </section>
     <section class="mdc-toolbar__section">
-      <a [routerLink]="['/Settings']" class="demo-paragraph">Settings</a>
-      <a [routerLink]="['/About']" class="demo-paragraph">About</a>
-      <a [routerLink]="['/Help']" class="demo-paragraph">Help</a>
+      <a [routerLink]="['', 'cnn']" class="demo-paragraph">CNN</a>
+      <a [routerLink]="['', 'bbc-news']" class="demo-paragraph">BBC</a>
+      <a [routerLink]="['', 'hacker-news']" class="demo-paragraph">Hacker News</a>
     </section>
     <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
           <a href="#" class="material-icons" aria-label="Download" alt="Download">file_download</a>
@@ -16,5 +19,8 @@
     </section>
   </div>
 </header>
-
-<router-outlet></router-outlet>
+</div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

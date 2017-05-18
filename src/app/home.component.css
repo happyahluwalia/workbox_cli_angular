@@ -1,8 +1,18 @@
-/*.container {
-  margin-top: 100px;
+
+.demo-wrapper {
+  margin: 25px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   flex-flow: row wrap;
+  align-content: left;
+  justify-content: space-around;
+
+
 }
-*/
+
+.demo-card {
+    max-width: 24.875rem;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 2px darkorange;
+}

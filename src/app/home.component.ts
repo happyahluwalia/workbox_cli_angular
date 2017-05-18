@@ -17,10 +17,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     // Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     // Add 'implements OnInit' to the class.
-      console.log(this.route.snapshot.params['id']);
       this.changeSource('cnn');
       this.route.params.subscribe((params: Params) => {
-        console.log(params['id']);
         this.changeSource(params['id']);
       });
   }

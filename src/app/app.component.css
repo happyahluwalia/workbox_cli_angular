@@ -1,8 +1,5 @@
 @import '../../node_modules/@material/toolbar/dist/mdc.toolbar.min.css';
 
-.mdc-toolbar-demo {
-  margin: 0px;
-}
 .demo-paragraph {
   cursor: pointer;
   padding: 0px 8px 0px 0px;
@@ -21,9 +18,7 @@
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 60px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-flow: column;
+ *background-color: lightskyblue;
 }

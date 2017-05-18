@@ -1,19 +1,12 @@
-<div class="container">
-<!--<div class="mdc-card__horizontal-block">
-  <a [routerLink]="['cnn']" >
-       <img class="mdc-card__media-item mdc-card__media-item--1x" src="../assets/images/cnn.jpg" />
-  </a>
+<div class="demo-wrapper">
+   <div *ngFor="let article of articles" class=" container">
+    <div class="demo-card mdc-card">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large">{{article.title}}</h1>
+      </section>
+      <section class="mdc-card__supporting-text">
+        {{article.description}}
+      </section>
+  </div>
 </div>
-<div class="mdc-card__horizontal-block">
-  <a [routerLink]="['bbc']" >
-       <img class="mdc-card__media-item mdc-card__media-item--1x" src="../assets/images/bbc.png" />
-  </a>
-</div>
-<div class="mdc-card__horizontal-block">
-  <a [routerLink]="['hacker']" >
-       <img class="mdc-card__media-item mdc-card__media-item--1x" src="../assets/images/hackernews.jpg" />
-  </a>
-</div>-->
-<li *ngFor="let article of articles">{{article.description}}</li>
-
 </div>

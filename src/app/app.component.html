@@ -13,15 +13,19 @@
       <a [routerLink]="['', 'hacker-news']" class="demo-paragraph">Hacker News</a>
     </section>
     <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-          <a href="https://twitter.com/happyahluwalia" target="_blank" class="material-icons" 
-                          aria-label="Twitter" alt="Twitter">
+       <!--
+         User rel="noopeneer" with target=_blank for security and performance reasons
+         https://developers.google.com/web/tools/lighthouse/audits/noopener
+       -->
+          <a href="https://twitter.com/happyahluwalia" target="_blank" rel="noopener"
+                          class="material-icons" aria-label="Twitter" alt="Twitter">
               <img style="width: 32px; height: 28px; display: block;" alt="Twitter"
-                     src="../assets/images/Twitter_bird_logo_2012.svg.png"/>
+                     src="./assets/images/Twitter_bird_logo_2012.svg.png"/>
           </a>
-          <a href="https://github.com/happyahluwalia/" target="_blank" class="material-icons" 
-                          aria-label="Github Profile" alt="Github">
+          <a href="https://github.com/happyahluwalia/" target="_blank" rel="noopener"
+                          class="material-icons" aria-label="Github Profile" alt="Github">
               <img  alt="Github"
-                     src="../assets/images/GitHub-Mark-32px.png"/>
+                     src="./assets/images/GitHub-Mark-32px.png"/>
           </a>
           <!--<a href="#" class="material-icons" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>-->
     </section>

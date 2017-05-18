@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  changeSource(source: string) {
+  changeSource(source = 'cnn') {
      this.articles = [];
      this.http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=' + this.apiKey)
          .forEach(value => this.articles.push(...value.json().articles));

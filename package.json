@@ -6,11 +6,12 @@
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
-    "postinstall": "ng build --prod --aot && npm run generatesw",
+    "postinstall": "ng build --prod --aot --base-href=https://happyahluwalia.github.io/workbox_cli_angular/ && npm run generatesw && npm run deploy-gh-pages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "generatesw": "workbox-cli generate:sw --config=workbox-cli-config.json"
+    "generatesw": "workbox-cli generate:sw --config=workbox-cli-config.js",
+    "deploy-gh-pages":"ngh"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,6 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0",
-    "workbox-cli": "1.0.0"
+    "workbox-cli": "0.0.2"
   }
 }

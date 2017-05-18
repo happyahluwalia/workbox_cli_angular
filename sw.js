@@ -1,4 +1,4 @@
-importScripts('workbox-sw.prod.v1.0.0.js');
+importScripts('workbox-sw.prod.v0.0.2.js');
 
 /**
  * DO NOT EDIT THE FILE MANIFEST ENTRY
@@ -84,7 +84,7 @@ const fileManifest = [
   },
   {
     "url": "manifest.json",
-    "revision": "18ce47ef234370a333c7ef27079fe3e3"
+    "revision": "a1ecc711e73f6f7f8b6c584929ebdab0"
   },
   {
     "url": "polyfills.3c94411d2589f8c44aa8.bundle.js",
@@ -99,10 +99,9 @@ const fileManifest = [
     "revision": "9cadde3d3713569aabd213c6b480f028"
   },
   {
-    "url": "workbox-sw.prod.v1.0.0.js",
-    "revision": "9029a00430d1c6ccf363f3ad77c45d42"
+    "url": "workbox-sw.prod.v0.0.2.js",
+    "revision": "adecd1be2876458436c6fb61554335ce"
   }
 ];
-
 const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);

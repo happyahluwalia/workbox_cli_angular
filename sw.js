@@ -1,4 +1,4 @@
-importScripts('workbox-sw.prod.v0.0.2.js');
+importScripts('workbox-sw.prod.v1.0.0.js');
 
 /**
  * DO NOT EDIT THE FILE MANIFEST ENTRY
@@ -99,9 +99,10 @@ const fileManifest = [
     "revision": "9cadde3d3713569aabd213c6b480f028"
   },
   {
-    "url": "workbox-sw.prod.v0.0.2.js",
-    "revision": "adecd1be2876458436c6fb61554335ce"
+    "url": "workbox-sw.prod.v1.0.0.js",
+    "revision": "9029a00430d1c6ccf363f3ad77c45d42"
   }
 ];
+
 const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);
